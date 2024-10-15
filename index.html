@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    <title>PHIL TECH</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Agdasima", sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        section{
+            height: 100vh;
+            width: 100%;
+        }
+        #home{
+            background-image: url(https://i.pinimg.com/564x/ef/b9/5e/efb95ee77ba0f256516e952f669911ec.jpg);
+            background-size: cover;
+        }
+        .container{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            padding: 10px 20px;
+            padding-top: 100px;
+        }
+        header{
+            background: #000;
+            color: white;
+            display: flex;
+            place-content: center;
+            align-items: center;
+            padding-inline: 50px;
+            height:90px;
+            position: fixed;
+            width: 100%;
+            z-index:1000;
+        }
+        .logo{
+            width: 500px;
+            padding:10px;
+            display: flex;
+        }
+        .logo h1{
+            text-transform: uppercase;
+        }
+        ::-webkit-scrollbar{
+            width: 5px;
+            background:#202020a9;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: #000;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        nav{
+            display: flex;
+        }
+        nav a{
+            padding: 6px;
+            background: #ffffff3d;
+            margin: 5px 10px;
+            width: 90px;
+            text-align: center;
+            border-radius: 3px;
+            color: white;
+            font-size: 1.2rem;
+            height: 40px;
+            transition: .3s;
+        }
+        nav a:active{
+            background: green;
+        }
+        nav a:hover{
+            background: green;
+        }
+        .home{
+            display: flex;
+            place-content: center;
+            align-items: center;
+            background: #00000082;
+        }
+        .hero{
+            width: 90%;
+            height: 80%;
+            position: relative;
+        }
+        .nam{
+            color: white;
+            font-size: 5rem;
+            text-align: center;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .techpic{
+            height: 300px;
+            object-fit: cover;
+        }
+        .tmt{
+            text-align: center;
+            color: white;
+        }
+        .tmt h1{
+            margin: 20px;
+            font-size: 1.9rem;
+        }
+        .tmt p{
+            font-size: 1.2rem;
+        }
+    </style>
+    <header>
+        <div class="logo">
+            <h1>phil tech solutions</h1>
+        </div>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#">about us</a>
+            <a href="#">contact us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container home">
+                <div class="hero">
+                    <p class="nam">phil tech solutions</p>
+                    <img src="https://i.pinimg.com/564x/ef/b9/5e/efb95ee77ba0f256516e952f669911ec.jpg" alt="techpic" class="techpic">
+                    <div class="tmt">
+                        <h1>Welcome to phil tech solutions</h1>
+                        <p>We provide innovative IT solutions for businesses across Uganda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
