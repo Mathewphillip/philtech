@@ -19,8 +19,8 @@
             height: 100vh;
             overflow-x: hidden;
             scroll-behavior: smooth;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #000009;
+            color: #868686;
         }
 
         a {
@@ -34,13 +34,19 @@
 
         section {
             height: 100vh;
-            width: 100%;
+            width: 100vw;
+            overflow: hidden;
         }
 
         #home {
             background-image: url(https://i.pinimg.com/564x/ef/b9/5e/efb95ee77ba0f256516e952f669911ec.jpg);
             background-size: cover;
             background-position: center;
+            padding-block-start: 70px;
+        }
+        #about{
+            display: grid;
+            place-items: center;
         }
 
         /* Header Styling */
@@ -99,6 +105,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 100%;
+            height: 100%;
             align-items: center;
             text-align: center;
             background: rgba(0, 0, 0, 0.6);
@@ -144,7 +152,7 @@
         }
 
         .btn-camera:hover {
-            background-color: #45a049;
+            background-color: #1fa626;
         }
 
         input[type="file"] {
