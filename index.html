@@ -2,186 +2,184 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
     <title>PHIL TECH</title>
-</head>
-<body>
     <style>
-        *{
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: "Agdasima", sans-serif;
         }
-        a{
-            text-decoration: none;
-        }
-        img{
-            width: 100%;
-            height: auto;
-        }
-        body{
+
+        body {
             width: 100vw;
             height: 100vh;
             overflow-x: hidden;
             scroll-behavior: smooth;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        section{
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
             height: 100vh;
             width: 100%;
         }
-        #home{
+
+        #home {
             background-image: url(https://i.pinimg.com/564x/ef/b9/5e/efb95ee77ba0f256516e952f669911ec.jpg);
             background-size: cover;
+            background-position: center;
         }
-        .container{
-            position: relative;
-            height: 100%;
-            width: 100%;
-            padding: 10px 20px;
-            padding-top: 100px;
-        }
-        header{
-            background: #000;
+
+        /* Header Styling */
+        header {
+            background: rgba(0, 0, 0, 0.8);
             color: white;
             display: flex;
-            place-content: center;
+            justify-content: space-between;
             align-items: center;
-            padding-inline: 50px;
-            height:90px;
+            padding: 10px 20px;
             position: fixed;
             width: 100%;
-            z-index:1000;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
-        .logo{
-            width: 500px;
-            padding:10px;
-            display: flex;
-        }
-        .logo h1{
+
+        .logo h1 {
             text-transform: uppercase;
+            font-size: 1.5rem;
         }
-        ::-webkit-scrollbar{
-            width: 5px;
-            background:#202020a9;
+
+        nav {
+            display: flex;
+            gap: 15px;
         }
-        ::-webkit-scrollbar-thumb{
-            background: #000;
-            cursor: pointer;
+
+        nav a {
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            font-size: 1rem;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        nav{
-            display: flex;
-        }
-        nav a{
-            padding: 6px;
-            background: #ffffff3d;
-            margin: 5px 10px;
-            width: 90px;
-            text-align: center;
-            border-radius: 3px;
-            color: white;
-            font-size: 1.2rem;
-            height: 40px;
-            transition: .3s;
-        }
-        nav a:active{
+
+        nav a:hover {
             background: green;
         }
-        nav a:hover{
-            background: green;
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        .home{
+
+        ::-webkit-scrollbar-track {
+            background: #ccc;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #000;
+            border-radius: 10px;
+        }
+
+        /* Hero Section */
+        .home {
             display: flex;
-            place-content: center;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            background: #00000082;
-        }
-        .hero{
-            width: 90%;
-            height: 80%;
-            position: relative;
-        }
-        .nam{
-            color: white;
-            font-size: 5rem;
             text-align: center;
-            font-weight: 600;
-            text-transform: capitalize;
+            background: rgba(0, 0, 0, 0.6);
         }
-        .techpic{
+
+        .nam {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .techpic {
             height: 300px;
             object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
-        .tmt{
-            text-align: center;
+
+        .tmt h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .tmt p {
+            font-size: 1rem;
+        }
+
+        /* About Section */
+        .container {
+            padding: 20px;
+        }
+
+        .btn-camera {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
             color: white;
-        }
-        .tmt h1{
-            margin: 20px;
-            font-size: 1.9rem;
-        }
-        .tmt p{
-            font-size: 1.2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-    .btn-camera {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #4caf50;
-      color: white;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+        .btn-camera:hover {
+            background-color: #45a049;
+        }
 
-    .btn-camera:hover {
-      background-color: #45a049;
-    }
-
-    input[type="file"] {
-      display: none; /* Hide the default file input */
-    }
+        input[type="file"] {
+            display: none;
+        }
     </style>
+</head>
+<body>
     <header>
         <div class="logo">
-            <h1>phil tech solutions</h1>
+            <h1>PHIL TECH SOLUTIONS</h1>
         </div>
         <nav>
-            <a href="#home">home</a>
-            <a href="#">about us</a>
-            <a href="#">contact us</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
         </nav>
     </header>
     <main>
         <section id="home">
             <div class="container home">
-                <div class="hero">
-                    <p class="nam">phil tech solutions</p>
-                    <img src="https://i.pinimg.com/564x/ef/b9/5e/efb95ee77ba0f256516e952f669911ec.jpg" alt="techpic" class="techpic">
-                    <div class="tmt">
-                        <h1>Welcome to phil tech solutions</h1>
-                        <p>We provide innovative IT solutions for businesses across Uganda.</p>
-                    </div>
+                <p class="nam">PHIL TECH SOLUTIONS</p>
+                <img src="https://i.pinimg.com/564x/ef/b9/5e/efb95ee77ba0f256516e952f669911ec.jpg" alt="techpic" class="techpic">
+                <div class="tmt">
+                    <h1>Welcome to Phil Tech Solutions</h1>
+                    <p>We provide innovative IT solutions for businesses across Uganda.</p>
                 </div>
             </div>
         </section>
         <section id="about">
             <div class="container about">
-                <div class="imageTake">
-                    <h1>Open Camera</h1>
-                    <p>Click the button below to open the camera:</p>
-                    <label for="cameraInput" class="btn-camera">Open Camera</label>
-                    <input 
-                      type="file" 
-                      id="cameraInput" 
-                      accept="image/*" 
-                      capture="environment"
-                    >
-                </div>
+                <h1>Open Camera</h1>
+                <p>Click the button below to open the camera:</p>
+                <label for="cameraInput" class="btn-camera">Open Camera</label>
+                <input type="file" id="cameraInput" accept="image/*" capture="environment">
             </div>
         </section>
     </main>
